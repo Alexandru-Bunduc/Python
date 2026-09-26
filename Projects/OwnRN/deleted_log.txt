@@ -1,0 +1,44 @@
+
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign\missions\BOOT_m04.Altis\autosave.Arma3Save
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign\missions\BOOT_m04.Altis\weapons.cfg
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign\missions\BOOT_m04.Altis
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign\campaign.sqc
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign\missions
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Scenarios\VR.VR
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Campaign
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp\Scenarios
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA\Campaign\campaign.sqc
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA\Campaign\continue.Arma3Save
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA\Campaign\objects.sav
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA\Campaign\weapons.cfg
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA\Campaign
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_Bootcamp
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3\Missions_F_EPA
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\steam\meta\cacheItems.map
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\steam\meta\publishedContent.list
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\steam\meta\subscribedContent.list
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\steam\meta
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\A3
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved\steam
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Arma3.cfg
+File has been deleted: C:\Users\Pc\Documents\Arma 3\BISProfile.json
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Pc.Arma3Profile
+File has been deleted: C:\Users\Pc\Documents\Arma 3\Pc.vars.Arma3Profile
+File has been deleted: C:\Users\Pc\Documents\Arma 3\stats.Arma3.json
+Folder has been deleted: C:\Users\Pc\Documents\Arma 3\Saved
+The main folder has been deleted: C:\Users\Pc\Documents\Arma 3
+File has been deleted: C:\Users\Pc\Documents\AAA\bin\Debug\AAA.exe
+Folder has been deleted: C:\Users\Pc\Documents\AAA\bin\Debug
+File has been deleted: C:\Users\Pc\Documents\AAA\obj\Debug\main.o
+Folder has been deleted: C:\Users\Pc\Documents\AAA\obj\Debug
+File has been deleted: C:\Users\Pc\Documents\AAA\AAA.cbp
+File has been deleted: C:\Users\Pc\Documents\AAA\AAA.depend
+File has been deleted: C:\Users\Pc\Documents\AAA\AAA.layout
+File has been deleted: C:\Users\Pc\Documents\AAA\main.cpp
+File has been deleted: C:\Users\Pc\Documents\AAA\matrice_rara.in
+File has been deleted: C:\Users\Pc\Documents\AAA\matrice_rara.out
+Folder has been deleted: C:\Users\Pc\Documents\AAA\bin
+Folder has been deleted: C:\Users\Pc\Documents\AAA\obj
+The main folder has been deleted: C:\Users\Pc\Documents\AAA
+------THE PROCESS HAS FULLY DELETED C:\Users\Pc\Documents\AAA------
+
