@@ -3,4 +3,6 @@
 
 26th of September 2026:
 -Implemented Phase 1 of OwnRM ( basic file and empty folder removal)
+-Implemented Phase 2 of OwnRM (non-empty folder removal, dry-run mode and a log of deleted files and folders)
+-A documentation will be provided on 27th of September
 
