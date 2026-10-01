@@ -2,8 +2,11 @@ import discord
 from discord.ext import commands
 import random
 import string
+import os
+from dotenv import load_dotenv
 
-
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -64,5 +67,49 @@ async def random_string(ctx, length: int = 8):
     result = ''.join(random.choices(characters, k=length))
     await ctx.send(f'🔠 Random string: `{result}`')
 
+@bot.command(name='setseed')
+@commands.has_permissions(administrator=True)
+async def set_seed(ctx, number: int):
+    random.seed(number)
+    await ctx.send(f"✅Seed number is {number}")
 
-bot.run('k')
+@bot.command(name='resetseed')
+@commands.has_permissions(administrator=True)
+async def reset_seed(ctx):
+    random.seed(None)
+    await ctx.send("🔄 Seed was reset to random.")
+
+
+@bot.command(name='pickwinners')
+@commands.has_permissions(administrator=True)
+async def pick_winners(ctx, number_winners: int, *participants):
+    if number_winners > len(participants):
+        await ctx.send("🚨 Warning! There are more winners than participants.")
+        return
+    else:
+        winners = random.sample(participants, number_winners)
+        await ctx.send(f"🏆 The winners are: {', '.join(winners)}")
+
+#error handler
+@bot.event
+async def on_command_error(ctx, error):
+    #not an admin error
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send("⛔ You don't have Administrator permissions to use this command!")
+        
+    #wrong param error
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send(f"❓ You are missing a required argument: `{error.param.name}`. Please check the command and try again.")
+        
+    #wrong argument
+    elif isinstance(error, commands.BadArgument):
+        await ctx.send("🔢 Invalid argument! Please make sure you are using numbers where expected.")
+        
+    #ignores fake commans
+    elif isinstance(error, commands.CommandNotFound):
+        pass
+        
+    #other
+    else:
+        print(f"An unexpected error occurred: {error}")
+bot.run(TOKEN)
