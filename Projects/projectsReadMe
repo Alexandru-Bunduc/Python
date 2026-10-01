@@ -14,7 +14,12 @@
 -Stared working on the DiscordRandom Type C project
 
 29th of September 2026
--Implemented a part of Phase 1
+-Implemented a part of Phase One for the DiscordRandom project
 -Please note that the project will NEVER reveal the Bot Token because of security concerns
 -A tutorial will be provided on how to safely run the code with your own bot
 -Implemented Phase 1
+
+ 1st of October 2026
+-Removed the Bot Token from the .py file and added .env file for security reasons
+-Implemented Phase Two of DiscordRandom
+-The Tutorial and Documentation will be provided on the 2nd of October
