@@ -30,3 +30,5 @@ Invite the bot to your server, open any text channel, and use the following synt
 3. Pick a random choice from a list: `!pick yes no maybe`
 4. Set the random seed for reproducible results (Admin only): `!setseed 1234`
 5. Pick 2 unique winners from a list (Admin only): `!pickwinners 2 Alex Dan Stefan Matei`
+
+> 💡 **New to Discord bots?** Check out my step-by-step [Visual Setup Tutorial](TUTORIAL.md) to learn how to create your bot, get your token, and safely set up your `.env` file.
