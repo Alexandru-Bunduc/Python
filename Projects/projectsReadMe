@@ -30,3 +30,4 @@
 4th of October 2025
 -Started working on the ProcessManager Type B project
 -Implemented Phase 1 of ProcessManager (process.py view prints a table of all processes with PID, Name, Path)
+-Implemented Phase 2 of ProcessManager (process.py run, process.py kill, exit codes, optional working directory parameter)
