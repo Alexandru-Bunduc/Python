@@ -26,3 +26,7 @@
 
 2nd of October 2026
 -Provided the documentation and tutorial for the DiscordRandom project
+
+4th of October 2025
+-Started working on the ProcessManager Type B project
+-Implemented Phase 1 of ProcessManager (process.py view prints a table of all processes with PID, Name, Path)
