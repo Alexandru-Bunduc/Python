@@ -64,7 +64,39 @@ def kill_process(args):
     except Exception as e:
         print(f"Unexpected error: {e}")
         sys.exit(1)
+def suspend_process(args):
+    try:
+        proc = psutil.Process(args.pid)
+        if proc.status() == psutil.STATUS_STOPPED:
+            print(f"Notice: PID {args.pid} is already suspended.")
+            sys.exit(0)
+            
+        proc.suspend()
+        print(f"Success: PID {args.pid} suspended.")
+        sys.exit(0)
+    except psutil.NoSuchProcess:
+        print(f"Error: PID {args.pid} not found.")
+        sys.exit(1)
+    except psutil.AccessDenied:
+        print(f"Error: Insufficient permission to suspend PID {args.pid}.")
+        sys.exit(1)
 
+def resume_process(args):
+    try:
+        proc = psutil.Process(args.pid)
+        if proc.status() != psutil.STATUS_STOPPED:
+            print(f"Notice: PID {args.pid} is not suspended.")
+            sys.exit(0)
+            
+        proc.resume()
+        print(f"Success: PID {args.pid} resumed.")
+        sys.exit(0)
+    except psutil.NoSuchProcess:
+        print(f"Error: PID {args.pid} not found.")
+        sys.exit(1)
+    except psutil.AccessDenied:
+        print(f"Error: Insufficient permission to resume PID {args.pid}.")
+        sys.exit(1)
 
 
 def main():
@@ -81,6 +113,12 @@ def main():
     kill_parser = subparsers.add_parser("kill", help="Terminate a process by its PID")
     kill_parser.add_argument("pid", type=int, help="The PID of the process to terminate")
 
+    suspend_parser = subparsers.add_parser("suspend", help="Pause a process")
+    suspend_parser.add_argument("pid", type=int, help="PID of the process")
+
+    resume_parser = subparsers.add_parser("resume", help="Resume a paused process")
+    resume_parser.add_argument("pid", type=int, help="PID of the process")
+
     args = parser.parse_args()
     
     if args.command == "view":
@@ -89,6 +127,10 @@ def main():
         run_process(args)
     elif args.command == "kill":
         kill_process(args)
+    elif args.command == "suspend":
+        suspend_process(args)
+    elif args.command == "resume":
+        resume_process(args)
     else:
         parser.print_help()
 
