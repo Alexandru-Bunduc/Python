@@ -1,0 +1,11 @@
+services:
+  sniffer:
+    build: .
+    container_name: http_packet_sniffer
+    volumes:
+      - .:/app
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    stdin_open: true
+    tty: true
