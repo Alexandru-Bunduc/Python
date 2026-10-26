@@ -34,3 +34,7 @@
 
 6th of October 2026
 -Implemented Phase 3 of Processsmanager (process.py suspend and process.py run)
+
+26th of October 2026
+-Started working on the PacketSniffer Type A project
+-Implemented Phase 1 of Packet Sniffer
