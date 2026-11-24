@@ -4,6 +4,8 @@ services:
     container_name: http_packet_sniffer
     volumes:
       - .:/app
+    ports:
+      - "8050:8050"
     cap_add:
       - NET_RAW
       - NET_ADMIN

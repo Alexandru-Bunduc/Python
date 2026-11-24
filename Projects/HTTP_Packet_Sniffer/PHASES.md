@@ -1,8 +1,5 @@
 # HTTP Packet Sniffer - Cerințe și Faze de Dezvoltare
 
-Sursa: [Python Course FII - Project 16: HTTP Packet Sniffer](https://gdt050579.github.io/python-course-fii/projects_a/16.html#http-packet-sniffer)
-
----
 
 ## Phase 1: Raw Packet Capture
 **Obiectiv:** Configurarea capturii de pachete de nivel jos folosind socket-uri Python.
